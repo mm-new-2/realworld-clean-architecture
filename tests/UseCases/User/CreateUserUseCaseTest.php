@@ -5,8 +5,7 @@ namespace UseCases\User;
 use App\Domain\User\User;
 use App\UseCases\User\CreateUserRequest;
 use App\UseCases\User\CreateUserUseCase;
-use App\UseCases\User\InMemoryUserGateway;
-use App\UseCases\User\UserResponse;
+use App\Gateway\User\InMemoryUserGateway;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 

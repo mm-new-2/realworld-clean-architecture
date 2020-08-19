@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UseCases\User;
+namespace App\Gateway\User;
 
 use App\Domain\User\User;
 use App\Gateway\User\UserGateway;
