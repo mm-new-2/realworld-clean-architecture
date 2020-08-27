@@ -3,7 +3,7 @@
 namespace UseCases\User;
 
 use App\Domain\User\User;
-use App\UseCases\User\CreateUserRequest;
+use App\UseCases\User\Requests\CreateUserRequest;
 use App\UseCases\User\CreateUserUseCase;
 use App\Gateway\User\InMemoryUserGateway;
 use PHPUnit\Framework\Assert;
