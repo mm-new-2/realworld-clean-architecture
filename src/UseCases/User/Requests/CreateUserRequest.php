@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UseCases\User;
+namespace App\UseCases\User\Requests;
 
 class CreateUserRequest {
 

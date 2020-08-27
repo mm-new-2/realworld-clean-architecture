@@ -3,6 +3,7 @@
 namespace App\UseCases\User;
 
 use App\Gateway\User\UserGateway;
+use App\UseCases\User\Requests\CreateUserRequest;
 
 class CreateUserUseCase {
 

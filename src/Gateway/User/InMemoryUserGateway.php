@@ -3,7 +3,7 @@
 namespace App\Gateway\User;
 
 use App\Domain\User\User;
-use App\Gateway\User\UserGateway;
+use App\Gateway\Exception\UserNotFoundException;
 
 class InMemoryUserGateway implements UserGateway {
 
@@ -16,6 +16,10 @@ class InMemoryUserGateway implements UserGateway {
 	}
 
 	public function get(string $email): User {
+		if (!isset($this->users[$email])) {
+			throw new UserNotFoundException("User not found for email {$email}");
+		}
+
 		return $this->users[$email];
 	}
 }
